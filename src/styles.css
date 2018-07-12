@@ -7,3 +7,8 @@
      background-repeat: no-repeat;
      background-size: cover;
   } */
+
+  .navbar {
+      background: rgb(255, 3, 3);
+      color: yellow;
+  }
