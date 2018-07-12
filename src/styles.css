@@ -12,3 +12,7 @@
       background: rgb(255, 3, 3);
       color: yellow;
   }
+
+  .bold {
+      font-weight: 700;
+  }
