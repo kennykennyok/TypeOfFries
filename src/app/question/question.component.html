@@ -11,6 +11,27 @@
 <div class="row">
   <div class="col">
 <button routerLink="/1" class="btn bg-danger" > go back</button>
-<button routerLink="/question/2" class="btn bg-success" >Continue</button>
+<button routerLink="/2" class="btn bg-success" >Continue</button>
+<p>
+  question works!
+</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+        <h1 class="text-center">Choose the best answer.</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div *ngFor="let choice of this.quiz.questions[this.cQ].choices">
+        <p>{{ choice.name }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col font">
+        <i class="fas fa-long-arrow-alt-left float-left clearfix" routerLink=""></i>
+        <i class="fas fa-long-arrow-alt-right float-right clearfix" routerLink="/question/:2"></i>
+    </div>
   </div>
 </div>

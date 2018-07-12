@@ -8,8 +8,11 @@
      background-size: cover;
   }
 
-  .navbar {
+  nav {
       background: rgb(255, 3, 3);
+  }
+
+  a {
       color: yellow;
   }
 
