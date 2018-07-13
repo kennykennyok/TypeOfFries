@@ -11,10 +11,9 @@
   nav {
       background: rgb(255, 3, 3);
   }
-
-  a {
-      color: yellow;
-  }
+.biggerFont {
+    font-size: 2rem;
+}
 
   .bold {
       font-weight: 700;
