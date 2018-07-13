@@ -5,6 +5,12 @@
     font-family: 'Francois One', sans-serif;
 }
 .color {
-    background: rgb(255, 208, 0);
-    height: 100vh;
+    background: #FFD200;
+    height: 100%;
+}
+img:hover { 
+    opacity: 0.5;
+}
+.choices {
+    font-size: 2em;
 }
