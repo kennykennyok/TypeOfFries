@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class QuizService {
 
+  value = 0;
+
 questions = [
   {
     id: "1",
@@ -81,18 +83,41 @@ questions = [
     selectedAnswer:0,
     choices: [
       {
-        name: "Spicy"
+        name: "Spicy",
+        value:1
       },
       {
-        name: "Not Spicy"
+        name: "Not Spicy",
+        value:2
       }
     ]
   }
 ];
 
-  description(arg0: any): any {
-    throw new Error("Method not implemented.");
+calculateResult () {
+  let value = 0;
+  for (let i = 0; i < this.questions[i]; i++) {
+    value += this.questions[i].selectedAnswer;
   }
 
+
+// Code that will calculate the result ((EXAMPLE))
+  if(this.totalResult > 0 && this.totalResult <= 8) {
+    this.theTruth = "typeoffry";
+  } else if (this.totalResult > 50 && this.totalResult <= 100) {
+    this.theTruth = "anotherfry";
+  } else {
+    this.theTruth = "soggyfry";
+  }
+
+
+};
+
+
+  description(arg0: any): any {
+    throw new Error("Method not implemented.");
+  };
+
   constructor() { }
-}
+};
+
