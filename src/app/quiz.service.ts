@@ -10,10 +10,12 @@ questions = [
     id: "1",
     choices: [
       {
-        name: "Soft"
+        name: "Soft",
+        value: 1
       },
       {
-        name: "Crispy"
+        name: "Crispy",
+        value: 2
       }
     ]
   },
@@ -21,10 +23,12 @@ questions = [
     id: "2",
     choices: [
       {
-        name: "Skin"
+        name: "Skin",
+        value:1
       },
       {
-        name: "No Skin"
+        name: "No Skin",
+        value:2
       }
     ]
   },
@@ -32,10 +36,12 @@ questions = [
     id: "3",
     choices: [
       {
-        name: "Thick"
+        name: "Thick",
+        value:1
       },
       {
-        name: "Thin"
+        name: "Thin",
+        value:2
       }
     ]
   },
@@ -43,10 +49,12 @@ questions = [
     id: "4",
     choices: [
       {
-        name: "Seasoned"
+        name: "Seasoned",
+        value:1
       },
       {
-        name: "Not Seasoned"
+        name: "Not Seasoned",
+        value:2
       }
     ]
   },
@@ -54,10 +62,12 @@ questions = [
     id: "5",
     choices: [
       {
-        name: "Artistic"
+        name: "Artistic",
+        value:1
       },
       {
-        name: "Simple"
+        name: "Simple",
+        value:2
       }
     ]
   }
