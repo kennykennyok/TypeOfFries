@@ -70,6 +70,17 @@ questions = [
         value:2
       }
     ]
+  },
+  {
+    id: "6",
+    choices: [
+      {
+        name: "Spicy"
+      },
+      {
+        name: "Not Spicy"
+      }
+    ]
   }
 ];
 
