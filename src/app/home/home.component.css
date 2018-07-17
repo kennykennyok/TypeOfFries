@@ -5,3 +5,14 @@
 h1 {
     color: white;
 }
+.francois {
+    font-family: 'Francois One', sans-serif;
+}
+.container-fluid {
+    background:url("https://media.tenor.com/images/26e5e80d6150f10442c9e6f0cf642db9/tenor.gif");
+    height: 100vh;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
