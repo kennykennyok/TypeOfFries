@@ -8,6 +8,7 @@ export class QuizService {
 questions = [
   {
     id: "1",
+    selectedAnswer:0,
     choices: [
       {
         name: "Soft",
@@ -21,6 +22,7 @@ questions = [
   },
   {
     id: "2",
+    selectedAnswer:0,
     choices: [
       {
         name: "Skin",
@@ -34,6 +36,7 @@ questions = [
   },
   {
     id: "3",
+    selectedAnswer:0,
     choices: [
       {
         name: "Thick",
@@ -47,6 +50,7 @@ questions = [
   },
   {
     id: "4",
+    selectedAnswer:0,
     choices: [
       {
         name: "Seasoned",
@@ -60,6 +64,7 @@ questions = [
   },
   {
     id: "5",
+    selectedAnswer:0,
     choices: [
       {
         name: "Artistic",
@@ -73,6 +78,7 @@ questions = [
   },
   {
     id: "6",
+    selectedAnswer:0,
     choices: [
       {
         name: "Spicy"
