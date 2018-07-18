@@ -7,6 +7,13 @@ export class QuizService {
 
   value = 0;
 
+  theTruth = "";
+
+  totalResult = 0;
+
+  img = "";
+  fryDescription = "";
+
 questions = [
   {
     id: "1",
@@ -94,23 +101,49 @@ questions = [
   }
 ];
 
+
 calculateResult () {
   let value = 0;
-  for (let i = 0; i < this.questions[i]; i++) {
-    value += this.questions[i].selectedAnswer;
+
+
+  for (let i = 0; i < this.questions.length; i++) {
+    value += +this.questions[i].selectedAnswer;
+
+    this.totalResult = value;
   }
 
 
-// Code that will calculate the result ((EXAMPLE))
-  if(this.totalResult > 0 && this.totalResult <= 8) {
-    this.theTruth = "typeoffry";
-  } else if (this.totalResult > 50 && this.totalResult <= 100) {
-    this.theTruth = "anotherfry";
+console.log(this.questions[0].selectedAnswer);
+  if(this.questions[0].selectedAnswer == 1) {
+    if (this.totalResult > 0 && this.totalResult <= 8) {
+      this.theTruth = "You're a Chili Cheese Fry!";
+      this.img = "http://www.imfoodie.net/wp-content/uploads/2018/02/cheese-fries.jpg";
+      this.fryDescription="So sloppy but hey no shame!";
+    } else {
+      this.theTruth = "You're a Steak Fry!";
+      this.img = "http://www.foodbizmelbourne.com.au/wp-content/uploads/2017/01/mccains-steak-fries-510x400.jpg";
+      this.fryDescription="It's like a french fry, but a bigger french fry.";
+    }
   } else {
-    this.theTruth = "soggyfry";
+    if (this.totalResult > 0 && this.totalResult <=  9) {
+      this.theTruth = "You're a Waffle Fry!";
+      this.img = "https://piezonis.com/wp-content/uploads/2017/12/xpiezonis_waffle_fries-768x768.jpg.pagespeed.ic.zTOK_5NKZB.jpg";
+      this.fryDescription="WAFFLE FRIES! Treat yo self!";
+    } else {
+      this.theTruth = "You're a Curly Fry!";
+      this.img = "https://1for1pizza.com/wp-content/uploads/2016/08/Apps-Curly-Fries.png";
+      this.fryDescription="The eloquent and ever tasteful curly fry. Yes. Get you some.";
+    }
   }
 
+  console.log(this.totalResult);
 
+};
+
+resetValues () {
+  for (let i = 0; i < this.questions.length; i++) {
+    this.questions[i].selectedAnswer = 0;
+}
 };
 
 

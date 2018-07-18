@@ -8,9 +8,9 @@
     background: #FFD200;
     height: 100%;
 }
-img:hover { 
+/* img:hover { 
     opacity: 0.5;
-}
+} */
 .choices {
     font-size: 2em;
 }
