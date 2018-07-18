@@ -1,5 +1,8 @@
-.font {
+.icon {
     font-size: 5em;
+}
+.font {
+    font-size: 2em;
 }
 .francois {
     font-family: 'Francois One', sans-serif;
@@ -8,4 +11,10 @@
     background: rgb(255, 208, 0);
     height: 100%;
     background-size: cover;
+}
+a:link {
+    color: red;
+}
+a:hover {
+    color: white;
 }
